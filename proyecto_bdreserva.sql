@@ -38,7 +38,7 @@ costo_total_alojamiento decimal(7,2) NOT NULL,
 
 					 foreign key(idHabitacion) references habitacion(idHabitacion),
                      foreign key(idCliente) references cliente(idCliente),
-                     foreign key(idEmpleado) references empleado(idEmpleado));
+                     foreign key(idEmpleado) references Empleado(idEmpleado));
                      
 create table producto(idProducto int primary key NOT NULL AUTO_INCREMENT, 
 nombre_producto nvarchar(100) NOT NULL, 
